@@ -1,0 +1,709 @@
+version: "3.1"
+nlu:
+
+- intent: greet_fr
+  examples: |
+    - salut
+    - bonjour
+    - coucou
+    - hey là-bas
+    - hé
+    - bonsoir
+    - Salut ?
+    - HÉ
+    - Salut, es-tu toujours là
+    - SALUT
+    - Hey
+    - Salut
+    - Salut !
+    - bonjour là-bas
+    - Salut là-bas
+    - Salut
+    - bonjour, c'est ella
+    - Hola.
+    - bienvenue
+    - salut comment ça va
+    - bonjour
+    - bonjour à vous
+    - Salut!
+    - salut!
+    - à tout à l'heure
+    - ciao
+    - à plus tard
+    - au revoir
+    - ok je dois y aller
+    - au revoir pour l'instant
+    - au revoir udo
+    - bye était sympa de parler avec toi
+    - à plus
+    - je te remercie au revoir
+    - d'accord au revoir
+    - um d'accord merci au revoir
+    - et c'est tout merci et au revoir
+    - d'accord
+    - Génial, tu es un bon bot!
+    - super!
+    - je vois, merci
+    - oh c'est bien :-)
+    - bon travail bot
+    - super
+- intent: check_human_fr
+  examples: |
+    - êtes-vous un bot?
+    - Est-ce que je parle à une IA?
+    - êtes-vous un humain ou un bot?
+    - es-tu réel ?
+    - es-tu virtuel ?
+    - es-tu une IA ?
+    - n'es-tu pas un bot
+    - êtes-vous un chatbot
+    - êtes-vous un bot rasa?
+    - es-tu un vrai bot?
+    - es-tu un robot
+    - es-tu une IA
+    - es-tu artificiel
+    - êtes-vous une intelligence artificielle
+    - es-tu réel
+    - es-tu vraiment un bot
+    - es-tu un robot
+    - es-tu sûr d'être un bot ?
+- intent: deny_fr
+  examples: |
+    - pas vraiment
+    - non
+    - Je ne pense pas
+    - jamais
+    - aucune chance
+    - non merci
+    - Je ne sais pas
+    - Rien!
+    - peu importe
+    - n
+    - je refuse
+    - je n'aime pas ça
+    - je ne pense pas
+    - je ne veux aucun des deux
+    - je ne veux pas
+    - je ne veux pas te donner mon email
+    - je ne veux pas
+    - je ne veux pas accepter :P lol
+    - je suppose que ça veut dire - non
+    - j'ai bien peur que non
+    - je ne suis pas sûr
+- intent: goodbye_fr
+  examples: |
+    - à plus tard
+    - au revoir
+    - j'en ai fini
+    - quitter
+    - arrêter
+    - salut
+    - Adios
+    - AU REVOIR
+    - Merci beaucoup. À plus tard
+    - passe une bonne journée. il est temps de partir, au revoir
+    - au revoir
+    - ok je dois y aller
+    - bye bye bot
+    - bye pour l'instant
+    - au revoir udo
+    - bye c'était sympa de parler avec toi
+    - par leee
+    - à plus
+    - ciao
+    - à plus
+    - adieu
+    - au revoir
+    - au revoir.
+    - bonne nuit
+    - faut que j'y aille
+- intent: thankyou_fr
+  examples: |
+    - merci au revoir
+    - d'accord merci au revoir
+    - merci au revoir
+    - um d'accord merci au revoir
+    - merci
+    - et c'est tout merci et au revoir
+    - d'accord merci
+    - merci
+    - merci au revoir
+    - merci et au revoir
+    - Merci!
+    - Génial, tu es un bon bot!
+    - super!
+    - je vois, merci
+    - oh c'est bien :-)
+    - merci
+    - bon travail bot
+    - super
+    - merci pour l'aide
+    - merci vous
+    - merci!
+    - merci
+    - merci pour vos informations
+    - merci f
+- intent: help_fr
+  examples: |
+    - aide
+    - que pouvez-vous faire?
+    - que puis-je te demander?
+    - que fais-tu?
+    - comment pouvez-vous m'aider?
+    - aidez-moi
+    - aidez-moi, que faites-vous
+    - comment utiliser ceci
+    - comment pouvez-vous m'aider
+    - Quelles sont les choses que vous pouvez faire?
+    - Avec quoi d'autre pouvez-vous m'aider?
+    - pouvez-vous faire autre chose?
+    - pouvez-vous m'aider?
+    - revenez
+    - cool! puis-je faire quelque chose d'autre ici?
+    - salut que pouvez-vous faire pour moi
+    - aide
+    - aidez-moi
+    - donner de l'aide
+    - aider
+    - aider s'il vous plaît
+    - pouvez-vous m'aider
+    - besoin d'aide
+    - besoin d'aide ici
+    - J'ai besoin d'aide!
+    - besoin d'assistance
+    - s'il vous plaît aider
+    - s'il vous plaît aidez-moi
+    - que puis-je demander
+    - pouvez-vous m'aider avec quelque chose
+    - que pouvez-vous faire?
+    - puis-je obtenir de l'aide
+    - puis-je obtenir de l'aide s'il vous plaît
+    - puis-je obtenir de l'aide s'il vous plaît
+- intent: affirm_fr
+  examples: |
+    - oui
+    - en effet
+    - bien sûr
+    - ouais
+    - exact
+    - tout à fait
+    - absolument
+    - certainement
+    - c'est ça
+    - oui oui
+    - ouais c'est exact
+    - ouais je crois
+    - bien sûr
+    - totalement
+    - ouais sûr
+    - sans aucun doute
+    - ouais exactement
+    - ouais totalement
+    - ça a du sens
+    - ouais ça a du sens
+    - c'est vrai
+    - oui c'est vrai
+    - exactement
+- intent: human_handoff_fr
+  examples: |
+    - transfert à un humain
+    - opérateur
+    - Je veux parler à un humain
+    - puis-je parler à un agent
+    - vrai agent s'il vous plaît
+    - vrai humain
+    - discuter avec un agent en direct
+    - donnez-moi une personne s'il vous plaît
+    - je veux parler à un humain
+    - transférer à un humain
+    - S'il vous plaît, donnez-moi à un humain
+    - puis-je parler à un humain ?
+    - puis-je parler à un humain
+    - parler à un humain
+    - je veux un humain :(
+    - puis-je parler à un humain
+    - je veux parler à un humain
+    - je veux parler à un humain
+    - puis-je parler à une vraie personne ?
+    - me connecter à une vraie personne
+    - j'ai besoin d'une vraie personne
+    - puis-je parler à une vraie personne ?
+    - laissez-moi parler à une vraie personne
+    - laissez-moi parler à une vraie personne s'il vous plaît
+    - je veux parler à une vraie personne
+- intent: out_of_scope_fr
+  examples: |
+    - quelle est la racine carrée de 5
+    - Je veux connaître la météo
+    - quelle est la signification de la vie.
+    - le frigo ne fonctionne pas
+    - ma télé ne fonctionne pas
+    - je veux une pizza
+    - ma machine à laver ne fonctionne pas
+    - quelle année sommes-nous
+    - commander une pizza
+    - je veux commander une pizza
+    - quel est le temps aujourd'hui
+    - quel est le temps
+    - quel temps fait-il aujourd'hui ?
+    - comment est le temps
+    - raconte-moi une blague
+    - Puis-je avoir un hamburger ?
+    - YouTube peut-il parler ?
+    - Pouvez-vous me rappeler ?
+    - Pouvez-vous me donner le mot de passe de votre centre de données ?
+    - Pouvez-vous me donner le mot de passe de votre centre de données ?
+    - Pouvez-vous faire des sandwichs ?
+    - Pouvez-vous m'envoyer un Uber s'il vous plaît
+    - ofif fsdfafsfs
+    - qsjdbksqkdhsqkd
+    - aoiiezaozeupo
+    - ;,xcXN;wq
+    - az^popoekcb
+    - !LD?SPA
+    - !a:z;,dmle
+    - q!sd,pla$okepkz
+    - aêpiz)ajnc ql
+    - azoehoizuaheiâzheâ
+    - -:sq;c,dùmlazea
+    - mqz,leakpo"eza
+- intent: ask_transfer_charge_fr
+  examples: |
+    - Serai-je facturé pour transférer de l'argent
+    - les transferts coûtent-ils quelque chose?
+    - y a-t-il des frais de transfert?
+    - Y a-t-il une charge
+    - serai-je facturé pour une transaction?
+    - les transferts coûtent-ils quelque chose?
+    - y a-t-il des frais de transfert
+    - y a-t-il des frais de transfert
+    - combien coûte le frais de transfert
+    - quel est le coût du transfert d'argent
+    - que me facture-t-on lors d'un transfert d'argent
+    - allez-vous me facturer pour cet échange
+    - quel est le prix du transfert pour ce compte?
+    - d'accord mais combien pour déplacer cet argent?
+    - combien coûte le frais pour déplacer mon argent?
+    - si j'envoie de l'argent à quelqu'un, serai-je facturé en plus pour cela?
+    - y a-t-il des frais lorsque j'envoie de l'argent à quelqu'un
+    - quel est le frais pour envoyer de l'argent à quelqu'un d'autre
+    - J'ai envoyé de l'argent à mon ami, serai-je facturé en plus pour cela
+    - quel est le frais en pourcentage pour les transactions à une autre personne
+    - y a-t-il des frais ou des charges de transaction que je devrais connaître?
+    - parlez-moi des frais de transfert
+- intent: check_balance_fr
+  examples: |
+    - Combien d'argent y a-t-il sur mon compte?
+    - Combien d'argent y a-t-il sur mon compte [bancaire](account_type)?
+    - quel est mon [solde](amount-of-money) ?
+    - quel est mon [solde actuel](amount-of-money) ?
+    - Qu'est-ce qui reste sur ce compte?
+    - Combien ai-je sur ce compte?
+    - Quel est le [solde](amount-of-money) sur ce compte?
+    - Combien d'argent reste-t-il sur ce compte?
+    - quel est mon [solde de compte](amount-of-money)
+    - quel est mon [solde de compte](amount-of-money)?
+    - quel est mon [solde de compte](amount-of-money)
+    - quel est mon [solde de compte](amount-of-money)
+    - Quel est mon [compte bancaire](account_type) [solde](amount-of-money)
+    - quel est mon [compte bancaire](account_type) [solde](amount-of-money)?
+    - quel est mon [compte bancaire](account_type) [solde](amount-of-money)
+    - quel est mon [compte bancaire](account_type) [solde](amount-of-money)
+    - Quel est mon [solde de carte de crédit](amount-of-money) [visa](account_type)
+    - Quel est mon [solde de crédit](amount-of-money) [visa](account_type)
+    - Combien d'argent dois-je sur mes [cartes de crédit](account_type)
+    - Montre-moi mon [solde de carte de crédit](amount-of-money) [visa](account_type)
+    - Quels comptes [de crédit](account_type) ai-je
+    - Montre-moi mes comptes [de crédit](account_type)
+    - Quel est le [solde](amount-of-money) sur mon [compte de crédit](account_type)
+    - Quel est mon [compte de crédit](account_type)
+    - Quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)
+    - Montre-moi mon [solde de la banque de fer](credit_card) [carte](account_type) [solde](amount-of-money)
+    - Quel est mon [solde de la banque de justice](credit_card) [carte](account_type) [solde](amount-of-money)
+    - Quel est le [solde](amount-of-money) sur le [compte de la banque de justice](credit_card)
+    - quel est mon [emblème](credit_card) [carte de crédit](account_type) [solde](amount-of-money)?
+    - quel est mon [solde de carte de crédit](account_type) [visa](amount-of-money)?
+    - quel est mon [compte de carte de crédit](account_type) [solde](amount-of-money)?
+    - Quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)?
+    - quel est mon [emblème](credit_card) [solde](amount-of-money)?
+    - quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)?
+    - quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)?
+    - quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)?
+    - quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)?
+    - quel est mon [emblème](credit_card) [carte](account_type) [solde](amount-of-money)?
+    - combien d'argent ai-je dépensé récemment?
+    - Je devrais vérifier mon [solde de carte de crédit]{"entity": "account_type", "value": "credit"} [balance](amount-of-money) [d'abord](account_type)
+    - vérifiez mon [solde de carte de crédit]{"entity": "account_type", "value": "credit"} [balance](amount-of-money)
+    - vérifiez mon [solde de carte de crédit]{"entity": "account_type", "value": "credit"} [balance](amount-of-money) [d'abord](account_type)
+    - Pouvez-vous me dire mon [solde de compte](amount-of-money)?
+    - Bonjour, je voudrais savoir combien d'argent il y a dans mon compte
+    - salut, quel est mon solde de compte s'il vous plaît
+    - donc.... quel est mon [solde](amount-of-money)?
+    - quel est mon [solde actuel](amount-of-money)
+    - Quel est mon [solde](amount-of-money)?
+    - Combien d'argent ai-je?
+    - Ouais, j'aime le café 👀 Mais combien d'argent ai-je?
+    - Ouais, je sais 😀 Puisqu'il fait si beau: Combien d'argent ai-je?
+    - dans quels endroits ai-je dépensé de l'argent?
+    - Attends, je dois d'abord vérifier mon solde. Pouvez-vous le faire s'il vous plaît?
+    - Salut, je dois savoir combien d'argent il y a dans mon compte [chèque](account_type)
+    - Solde s'il vous plaît
+- intent: check_earnings_fr
+  examples: |
+    - Combien d'argent est entré sur mon compte le mois dernier?
+    - Combien d'argent ai-je gagné l'année dernière?
+    - Combien ai-je gagné le mois dernier?
+    - Combien ai-je gagné le mois dernier?
+    - Combien d'argent ai-je gagné la semaine dernière?
+    - combien a été déposé sur mon compte le mois dernier?
+    - combien a été déposé sur mon compte au cours des deux dernières semaines?
+    - vérifier les dépôts de la semaine dernière
+    - dépôts totaux sur l'année dernière
+    - combien a été déposé en janvier
+    - combien d'argent ai-je gagné?
+    - qu'ai-je gagné?
+    - Combien ai-je gagné?
+    - combien ai-je gagné
+    - suis-je riche déjà?
+    - suis-je millionnaire
+    - combien d'argent circule sur mon compte
+    - combien d'argent y a-t-il dans le compte de la machine à sous?
+    - combien ai-je gagné l'année dernière?
+    - montrez-moi combien j'ai gagné la semaine dernière
+    - puis-je me permettre de partir en vacances
+    - le loyer est bientôt dû, combien ai-je sur mon compte
+- intent: inform_fr
+  examples: |
+    - 10 $
+    - 5000
+    - 500
+    - 100 $
+    - 500 $
+    - 100 dollars
+    - 1000 dollars
+    - demain
+    - la semaine prochaine
+    - hier
+    - pour aujourd'hui
+    - la semaine dernière
+    - le mois dernier
+    - les deux derniers jours
+    - les deux dernières semaines
+    - chez [amazon](vendor_name)
+    - [starbucks](vendor_name)
+    - chez [target](vendor_name)
+    - chez [starbucks](vendor_name)
+    - [target](vendor_name)
+    - [Amazon](vendor_name)
+    - [Starbucks](vendor_name)
+    - [Target](vendor_name)
+    - je veux payer le [solde actuel](amount-of-money)
+    - [solde actuel](amount-of-money)
+    - [plein](amount-of-money)
+    - en [plein](amount-of-money)
+    - le [solde complet](amount-of-money)
+    - [solde minimum](amount-of-money)
+    - Je veux payer le [solde minimum](amount-of-money)
+    - le [solde complet](amount-of-money)
+    - le [solde minimum](amount-of-money)
+    - mon [solde minimum](amount-of-money)
+    - mon [solde actuel](amount-of-money)
+    - [emblème](credit_card) [carte](account_type)
+    - toutes [les cartes](account_type)
+    - [carte de la banque de fer](credit_card) [carte](account_type)
+    - [carte de la banque de justice](credit_card) [carte](account_type)
+    - [emblème](credit_card)
+    - [carte de la banque de fer](credit_card)
+    - [carte de la banque de justice](credit_card)
+    - [emblème](credit_card) compte
+    - [carte de la banque de fer](credit_card) compte
+    - [carte de la banque de justice](credit_card) compte
+    - [emblème](credit_card) [carte de crédit](account_type)
+    - [carte de la banque de fer](credit_card) [carte de crédit](account_type)
+    - [carte de la banque de justice](credit_card) [carte de crédit](account_type)
+    - mon [emblème](credit_card) [carte de crédit](account_type)
+    - mon [carte de la banque de fer](credit_card) [carte de crédit](account_type)
+    - mon [carte de la banque de justice](credit_card) [carte de crédit](account_type)
+    - ma [emblème](credit_card) [carte](account_type)
+    - ma [carte de la banque de fer](credit_card) [carte](account_type)
+    - ma [carte de la banque de justice](credit_card) [carte](account_type)
+    - vers mon [emblème](credit_card) [carte](account_type)
+    - vers mon [carte de la banque de fer](credit_card) [carte](account_type)
+    - vers mon [carte de la banque de justice](credit_card) [carte](account_type)
+    - pour dimanche
+    - pour vendredi
+    - pour demain
+    - pour samedi
+    - je veux payer le [solde minimum](amount-of-money) sur ma [emblème](credit_card) [carte de crédit](account_type) aujourd'hui
+    - aujourd'hui
+    - Veuillez le planifier pour le premier du mois prochain
+    - cent dollars
+    - [mastercard](credit_card)
+    - [visa](credit_card)
+    - [american express](credit_card)
+    - mon compte [rasa](credit_card)
+    - mon compte [carte de crédit]{"entity": "account_type", "value": "credit"} se terminant par 4321
+    - Mon compte [Visa](credit_card)
+    - Un ami.
+    - [Alexandra](PERSON)?
+    - aujourd'hui s'il vous plaît
+    - [Banque de fer](credit_card)
+    - Mon [visa](credit_card)
+    - [Bob](PERSON)
+    - [facture](PERSON)
+    - [anusha](PERSON)
+    - [Jean](PERSON)
+    - [gary](PERSON)
+    - [Claire](PERSON)
+    - [Imani](PERSON)
+    - [darnell](PERSON)
+    - [Guangchen](PERSON)
+    - [cheng](PERSON)
+    - à mon [frère](PERSON)
+    - à ma [sœur](PERSON)
+    - mon [père](PERSON)
+    - William Baker
+    - Evan Oslo
+    - Lisa Macintyre
+    - Karen Lancaster
+    - Percy Donald
+    - Kyle Gardner
+    - Katy Parrow
+    - Percy s'il vous plaît
+    - Laura Schilling
+    - Dans ce cas, allons-y avec Percy
+    - Ma chasse
+    - Jane
+    - Melinda
+    - Sara
+    - celle de ma femme
+    - Andreas
+    - ce week-end
+    - tous
+    - Darren Smith
+    - Percy
+    - percy donald
+    - danIelle smilanich
+    - [Laila](PERSON)
+    - [Kais](PERSON)
+    - [hela](PERSON)
+    - [naima](PERSON)
+    - [sarah](PERSON)
+    - [amine](PERSON)
+    - [slah](PERSON)
+    - [sami](PERSON)
+    - [samy](PERSON)
+    - [sarah mathlouthi](PERSON)
+    - [Gringtos](credit_card)
+    - [111222333](RIB)
+    - [123456789](RIB)
+    - [147258369](RIB)
+    - [987654321](RIB)
+    - [741852963](RIB)
+    - [369258147](RIB)
+    - [123265458](RIB)
+    - [951847623](RIB)
+    - [BH](credit_card) [carte](account_type)
+    - [BH](credit_card)
+    - [AMEN](credit_card)
+    - [BIAT](credit_card)
+    - [compte Ettijeri](credit_card)
+    - [BIAT](credit_card) compte
+    - [compte AMEN](credit_card)
+    - [AMEN](credit_card) [carte de crédit](account_type)
+    - [BIAT](credit_card) [carte de crédit](account_type)
+    - [Zaitouna](credit_card) [carte de crédit](account_type)
+    - mon [AMEN](credit_card) [carte de crédit](account_type)
+    - mon [BH](credit_card) [carte de crédit](account_type)
+    - mon [zaitouna](credit_card) [carte de crédit](account_type)
+    - mon [BH](credit_card) [carte](account_type)
+    - mon [AMEN](credit_card) [carte](account_type)
+    - mon [compte Ettijeri](credit_card) [carte](account_type)
+    - vers mon [compte BH Bank](credit_card) [carte](account_type)
+    - vers mon [compte amen bank](credit_card) [carte](account_type)
+    - vers mon [compte biat bank](credit_card) [carte](account_type)
+- intent: pay_cc_fr
+  examples: |
+    - Je voudrais payer le [solde minimum](amount-of-money) sur ma [emblème](credit_card) [carte](account_type)
+    - Je veux payer ma [carte de crédit](account_type)
+    - Je veux payer ma [carte](account_type)
+    - Payez ma [carte](account_type)
+    - Je veux payer ma facture [banque de justice](credit_card)
+    - Payez ma [découvrir](credit_card)
+    - Je veux payer ma facture [banque de fer](credit_card)
+    - Payez mon [visa](credit_card)
+    - Je veux payer ma facture [visa](credit_card)
+    - Payez mon [mastercard](credit_card)
+    - Je veux payer ma facture [MasterCard](credit_card)
+    - Je veux payer ma [carte de crédit](account_type) facture
+    - Je veux payer le [solde actuel](amount-of-money) sur ma [emblème](credit_card) [carte de crédit](account_type)
+    - pouvez-vous m'aider à payer le [solde actuel](amount-of-money) sur ma [emblème](credit_card) [carte de crédit](account_type)
+    - je veux payer ma [carte de crédit](account_type)
+    - Je veux payer ma [carte de crédit](account_type)
+    - je veux payer ma [emblème](credit_card) [carte de crédit](account_type)
+    - Je veux payer le [solde actuel](amount-of-money) sur ma [emblème](credit_card) [carte de crédit](account_type) aujourd'hui
+    - j'ai besoin de payer ma [emblème](credit_card) [carte de crédit](account_type)
+    - Veuillez planifier un paiement vers ma [carte de crédit](account_type) pour le 12 avril
+    - Puis-je planifier un paiement vers ma [carte de crédit](account_type) pour demain?
+    - Payez mon [solde minimum](amount-of-money), s'il vous plaît
+    - Je voudrais payer 1200 $ sur ma [carte de crédit]{"entity": "account_type", "value": "credit"}
+    - Je voudrais également payer ma facture [visa](credit_card)
+    - Payez ma [carte de crédit]{"entity": "account_type", "value": "credit"}, s'il vous plaît
+    - Je suppose que oui. Puisqu'il y en a tellement, payons mon [crédit](account_type)
+    - Payons cette facture de [carte de crédit]{"entity": "account_type", "value": "credit"}
+    - Je veux payer 100 dollars sur ma [Emblème](credit_card) [carte](account_type), demain
+    - payer 100 vers [emblème](credit_card) [carte](account_type), demain
+    - j'aimerais payer ma facture
+    - puis-je payer mon [carte]{"entity": "account_type", "value": "credit"}?
+- intent: search_transactions_fr
+  examples: |
+    - combien ai-je dépensé chez [Target](vendor_name) cette semaine?
+    - quel est mon budget habituel chez [Amazon](vendor_name)?
+    - Je veux vérifier mon historique de dépenses
+    - combien ai-je dépensé chez [Starbucks](vendor_name) la semaine dernière?
+    - Je dois vérifier mon historique de dépenses
+    - Je veux vérifier mes dépenses
+    - Je veux vérifier mon historique de dépenses chez [starbucks](vendor_name)
+    - je veux vérifier mon historique de dépenses
+    - je veux voir mon historique de transactions
+    - Je veux rechercher mes transactions passées
+    - puis-je rechercher mon historique de transactions
+    - puis-je consulter les transactions passées
+    - Je veux rechercher mes transactions avec [amazon](vendor_name)
+    - puis-je regarder mes transactions avec [target](vendor_name)
+    - combien ai-je dépensé chez [amazon](vendor_name)?
+    - combien ai-je dépensé chez [target](vendor_name)?
+    - montrez-moi mes transactions avec [amazon](vendor_name)
+    - montrez-moi mes transactions avec [starbucks](vendor_name)
+    - puis-je voir mes transactions avec [starbucks](vendor_name)
+    - puis-je voir mes transactions avec [amazon](vendor_name)
+    - Je veux voir toutes mes transactions
+    - montrez-moi toutes mes transactions
+    - je veux vérifier mes transactions récentes
+    - puis-je vérifier mes transactions récentes
+    - combien ai-je dépensé récemment?
+    - quels sont mes récents frais de carte de crédit?
+    - montrez-moi les transactions de la semaine dernière
+    - puis-je voir les transactions de la semaine dernière?
+    - je veux vérifier les transactions de la semaine dernière
+    - montrez-moi les transactions de la semaine dernière
+    - pouvez-vous montrer les transactions de la semaine dernière
+    - pouvez-vous me montrer les transactions de la semaine dernière
+    - puis-je vérifier les transactions de la semaine dernière
+    - je veux voir mes transactions récentes
+    - montrez-moi mes transactions récentes
+    - Je veux voir mes dépenses récentes
+    - Montre-moi mes dépenses récentes
+    - je veux voir mes dépenses récentes
+    - montrez-moi mes transactions de [carte de crédit](account_type)
+    - pouvez-vous montrer mes transactions de [carte de crédit](account_type)
+    - puis-je voir mes transactions de [carte de crédit](account_type)
+    - je veux voir mes transactions de [carte de crédit](account_type)
+    - montrez-moi mes transactions sur [visa](credit_card)
+    - puis-je voir mes transactions sur [visa](credit_card)
+    - puis-je voir mes transactions de [carte de crédit](account_type)
+    - je veux voir mes transactions sur [visa](credit_card)
+    - combien ai-je dépensé cette semaine?
+    - puis-je voir mes transactions de [carte de crédit](account_type)
+- intent: transfer_money_fr
+  examples: |
+    - Je veux payer [Jean](PERSON)
+    - Je veux transférer 100 $ à [Bob](PERSON)
+    - Puis-je transférer de l'argent à [Sally](PERSON)
+    - Je veux transférer de l'argent
+    - Je veux payer quelqu'un
+    - Puis-je payer quelqu'un
+    - J'ai besoin de transférer de l'argent à un ami
+    - Puis-je transférer de l'argent à ma [maman](PERSON)
+    - Je veux payer [Bert](PERSON)
+    - Payer mon ami
+    - Transférer de l'argent
+    - Je veux transférer 100 $ à [Tommy](PERSON)
+    - Je veux transférer 400 $ à [Akela](PERSON)
+    - Je veux payer [Paula Handy](PERSON)
+    - Payer Katy Parrow 40 $ s'il vous plaît
+    - Transférer 60 $ à [Jason Jacob](PERSON)
+    - Payer [Evan Oslo](PERSON)
+    - Payer [Lisa](PERSON) s'il vous plaît
+    - Puis-je transférer de l'argent à [Kyle Gardner](PERSON)?
+    - Payer [Karen](PERSON) 60 Euros
+    - Payer [Mona](PERSON) 60 $
+    - Transférer 60 $ à [Sally](PERSON)
+    - Besoin de transférer de l'argent
+    - Je veux transférer à [Kelly](PERSON)
+    - Payer [Percy](PERSON) 50 $
+    - Payer 50 $ à [Pat](PERSON)
+    - D'accord payer [Emma](PERSON)
+    - Payer [Emanuel](PERSON)
+    - Je veux transférer 100 $ à [Jane Smith](PERSON)
+    - Je veux transférer 100 $ à ma [fille](PERSON)
+    - Je veux transférer de l'argent s'il vous plaît
+    - Je veux dire que je veux transférer de l'argent
+    - J'ai besoin de payer un ami.
+    - Transférer de l'argent à [Ethan Oswald](PERSON)
+    - Transférer de l'argent à [Sara](PERSON)
+    - Je dois transférer de l'argent à ma grand-mère [Judith](PERSON).
+    - Je veux transférer de l'argent à [Latisha](PERSON)
+    - J'ai besoin de faire un virement urgent à [Bob](PERSON), pouvez-vous le faire?
+    - Ah, d'accord alors je veux faire un virement à [Bob](PERSON).
+    - Puis-je transférer de l'argent à un ami?
+    - J'ai besoin de transférer de l'argent à [Jeff](PERSON), mon fils
+    - Je dois envoyer de l'argent à mon enfant
+    - J'ai besoin de transférer de l'argent
+    - Envoyer 50 $ à [John Jacob](PERSON)
+    - Je dois transférer de l'argent à mon collègue qui a payé le déjeuner
+    - Salut, je veux envoyer de l'argent
+    - Je voudrais envoyer 50 $ à [John](PERSON)
+    - Bonjour, je voudrais envoyer de l'argent à [John](PERSON)
+    - Veuillez transférer 50 dollars à [Andreas](PERSON)
+    - Je voudrais transférer de l'argent à [Philipp](PERSON)
+    - Je voudrais transférer 50 $ à [Joschka](PERSON)
+
+- intent: check_recipients_fr
+  examples: |
+    - À qui puis-je envoyer de l'argent?
+    - Qui sont mes destinataires connus
+    - Montrez-moi ma liste de destinataires
+    - Montrez-moi la liste des destinataires
+    - Montrez-moi les personnes à qui je peux envoyer de l'argent
+    - Qui est un bénéficiaire valide
+    - Qui puis-je payer?
+    - À qui puis-je transférer de l'argent?
+    - Qui est dans ma liste de destinataires?
+    - À qui puis-je transférer de l'argent?
+    - Qui est sur votre liste?
+    - Qui est dans ma liste de destinataires connus?
+    - Qui puis-je transférer de l'argent à?
+    - À qui puis-je transférer de l'argent?
+    - D'accord. À qui puis-je transférer de l'argent alors?
+    - Puis-je voir la liste des destinataires connus?
+    - Dites-moi avec qui je peux partager mon argent
+    - Quelle est ma liste de destinataires
+    - Puis-je envoyer de l'argent à quelqu'un?
+    - Qui exactement puis-je envoyer de l'argent
+    - Si je veux transférer de l'argent, puis-je l'envoyer à n'importe qui
+    - Montrez-moi ma liste d'envoi d'argent
+
+- synonym: credit
+  examples: |
+    - carte de crédit
+    - cartes de crédit
+    - compte de crédit
+    - comptes de crédit
+    - carte
+    - cartes
+    - compte de carte de crédit
+
+- synonym: emblem
+  examples: |
+    - emblème
+    - emblème
+    - Emblem
+
+- synonym: current_balance
+  examples: |
+    - solde
+    - plein
+    - solde complet
+
+    

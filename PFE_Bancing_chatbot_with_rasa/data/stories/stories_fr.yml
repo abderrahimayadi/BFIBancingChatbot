@@ -1,0 +1,5 @@
+- story: say ok when user affirms after action_show_balance
+  steps:
+  - action: action_show_balance
+  - intent: affirm_fr
+  - action: utter_ok

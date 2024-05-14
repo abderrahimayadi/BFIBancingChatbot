@@ -1,0 +1,38 @@
+version: "3.1"
+
+rules:
+- rule: greet_fr
+  steps:
+  - intent: greet_fr
+  - action: utter_greet_fr
+  - action: utter_help_fr
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye_fr
+  - action: utter_goodbye_fr
+
+- rule: Confirm that the bot is not a human
+  steps:
+  - intent: check_human_fr
+  - action: utter_iamabot_fr
+
+- rule: help_fr
+  steps:
+  - intent: help_fr
+  - action: utter_help_fr
+
+- rule: thankyou_fr
+  steps:
+  - intent: thankyou_fr
+  - action: utter_noworries_fr
+
+- rule: human_handoff_fr
+  steps:
+    - intent: human_handoff_fr
+    - action: utter_hand_off_fr
+
+- rule: out_of_scope_fr
+  steps:
+    - intent: out_of_scope_fr
+    - action: utter_out_of_scope_fr
